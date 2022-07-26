@@ -1,6 +1,6 @@
-namespace ProjectName.Models
+namespace AnimalShelter.Models
 {
-  public class ClassName
+  public class Animal
   {
     // properties, constructors, methods, etc. go here
   }
