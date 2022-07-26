@@ -1,8 +1,8 @@
-using Microsoft.EntityFrameeworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace AnimalShelter.Models
 {
-  public class AnimalShelterContext : AddDbContext
+  public class AnimalShelterContext : DbContext
   {
     public DbSet<Animal> Animals { get; set; }
 

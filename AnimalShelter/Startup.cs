@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using AnimalShelter.Models;
+
 
 namespace AnimalShelter
 {
@@ -21,12 +23,12 @@ namespace AnimalShelter
 
     public void ConfigureServices(IServiceCollection services)
     {
-      services.AddMvc();
+        services.AddMvc();
 
-      services.AddEntityFrameworkMySql()
+        services.AddEntityFrameworkMySql()
         .AddDbContext<AnimalShelterContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
-    }
+}
 
     public void Configure(IApplicationBuilder app)
     {
