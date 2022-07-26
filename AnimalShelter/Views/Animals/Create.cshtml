@@ -19,8 +19,10 @@
   @Html.LabelFor(model => model.Breed, "Breed:")
   @Html.TextBoxFor(model => model.Breed)
   <br>
-  @Html.LabelFor(model => model.DateArrival, "Date of Arrival:") 
-  @Html.TextBoxFor(model => model.DateArrival)
+  //@Html.LabelFor(model => model.DateArrival, "Date of Arrival:") 
+  //@Html.TextBoxFor(model => model.DateArrival, "{0:d MMM yyyy}")
+  @Html.LabelFor(model => model.DateArrival, "Date of Arrival:")
+  @Html.TextBoxFor(model => model.DateArrival,"{0:MM-dd-yyyy}", new { type = "date" })
   <br>
   <input type="submit" value="Add new Animal" />
 }
