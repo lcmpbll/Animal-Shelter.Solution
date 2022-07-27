@@ -5,7 +5,7 @@
 
 
 
-#### _A website where a user can add ne animmals to a animal shelter along with information about them _
+#### _A website where a user can add animmals to a animal shelter along with information about them_
 
 
 
